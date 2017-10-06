@@ -1,0 +1,18 @@
+<log type="Session" name="HASWELL:Alexey" at="2017-10-06 15:32:59.679"/>
+<log type="Test" name="RapiseTest1" status="Info"  at="2017-10-06 15:33:00.486"><data type="text" caption="undefined">Test Started: C:\JenkinsRunner\workspace\RapiseTest\RapiseTest1\RapiseTest1.js</data>
+</log>
+<log type="Assert" name="Process started" status="Pass"  at="2017-10-06 15:33:00.771" comment="Process ID:2560" />
+<log type="Message" name="Starting scenario: Test" status="Info"  at="2017-10-06 15:33:00.774"/>
+<log type="Message" name="Executing test" status="Info"  at="2017-10-06 15:33:00.777"/>
+<log type="Message" name="Screen flow" status="Info"  at="2017-10-06 15:33:01.821"><data type="link" url="C:\JenkinsRunner\workspace\RapiseTest\RapiseTest1\Reports\2017-10-6_15-33-1\index.html" text="C:\JenkinsRunner\workspace\RapiseTest\RapiseTest1\Reports\2017-10-6_15-33-1\index.html"/>
+</log>
+<log type="Message" name="checkBox.DoSetCheck([true]) returned true" status="Info" screen="1"  at="2017-10-06 15:33:01.947">
+<data type="image" caption="checkBox.DoSetCheck([true]) returned true">iVBORw0KGgoAAAANSUhEUgAAAEoAAAARCAYAAAB6mTpFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFCSURBVFhH7dZbbsMgEIVhcJdQ2xh3Cb3fsv+dpQMGRGYOmNSK1Eo8fA+RbGb4lUhRw/h0dvT9YxM1PmNTsPf5qPmlSpvXKrW8XUXbdy+F4sFUwD/D5a8BLuehZxH0bgbFyaEYSAzUQ+0QodJPgwuL6YmGk7SMoZcO0HOdmmjRA8R5fIflo4m2nxd6qAIRKoYQQYL0lY0sHZQDQ2oGg/ELlqA4OfE8C5UuDnbLxeeG9cvroQpEKP5T46GEhQY6Kx3o0dCKOLDkbtmUgskYNBPQM51HlNmx0KVr1m+sh2JQJCcF+qehYqAe6s+GEosFc0CX8iwd6qBDM9q2iYsOZsMDRPDyLfIYObAz1EPJnSERaqS/AA6K5cTBNw5VCnZxyV8Qc8HOUA/VKIXhUCQnhioMPiq/1E2gCBX64eT1UDu2UKfzD15OS9f8qnjoAAAAAElFTkSuQmCC</data>
+</log>
+<log type="Assert" name="checkBox.DoSetCheck([true])" status="Pass"  at="2017-10-06 15:33:01.954" comment="Returned Value: true" />
+<log type="Message" name="checkBox.DoSetCheck([false]) returned true" status="Info" screen="2"  at="2017-10-06 15:33:02.428">
+<data type="image" caption="checkBox.DoSetCheck([false]) returned true">iVBORw0KGgoAAAANSUhEUgAAAEoAAAARCAYAAAB6mTpFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFCSURBVFhH7dZbbsMgEIVhcJdQ2xh3Cb3fsv+dpQMGRGYOmNSK1Eo8fA+RbGb4lUhRw/h0dvT9YxM1PmNTsPf5qPmlSpvXKrW8XUXbdy+F4sFUwD/D5a8BLuehZxH0bgbFyaEYSAzUQ+0QodJPgwuL6YmGk7SMoZcO0HOdmmjRA8R5fIflo4m2nxd6qAIRKoYQQYL0lY0sHZQDQ2oGg/ELlqA4OfE8C5UuDnbLxeeG9cvroQpEKP5T46GEhQY6Kx3o0dCKOLDkbtmUgskYNBPQM51HlNmx0KVr1m+sh2JQJCcF+qehYqAe6s+GEosFc0CX8iwd6qBDM9q2iYsOZsMDRPDyLfIYObAz1EPJnSERaqS/AA6K5cTBNw5VCnZxyV8Qc8HOUA/VKIXhUCQnhioMPiq/1E2gCBX64eT1UDu2UKfzD15OS9f8qnjoAAAAAElFTkSuQmCC</data>
+</log>
+<log type="Assert" name="checkBox.DoSetCheck([false])" status="Pass"  at="2017-10-06 15:33:02.434" comment="Returned Value: true" />
+<log type="Assert" name="Process terminated" status="Pass"  at="2017-10-06 15:33:02.588" comment="Process ID:2560" />
+<log type="Test" name="RapiseTest1" status="Pass" closed="RapiseTest1"  at="2017-10-06 15:33:02.595" comment="Passed:4 Failed:0 Time:2.509s" />

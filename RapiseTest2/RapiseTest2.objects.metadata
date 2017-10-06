@@ -1,0 +1,207 @@
+{
+	"autEdit": {
+		"actions": [
+			{
+				"name": "DoAction",
+				"signature": "",
+				"description": "User acts on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoEnsureVisible",
+				"signature": "",
+				"description": "User scrolls visible area to \"%object_name%\""
+			},
+			{
+				"name": "DoClick",
+				"signature": "",
+				"description": "Users clicks \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoLClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"description": "User performs a left click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoLDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"description": "User performs a left double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoLButtonUp",
+				"signature": "",
+				"description": "User releases left mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoLButtonDown",
+				"signature": "",
+				"description": "User presses left mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoMouseMove",
+				"signature": "/**Number*/x, /**Number*/y",
+				"description": "User moves mouse over \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonDown",
+				"signature": "",
+				"description": "User presses right mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRButtonUp",
+				"signature": "",
+				"description": "User releases right mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"description": "User performs a right clicks \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoRDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"description": "User performs a right double click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoMButtonDown",
+				"signature": "",
+				"description": "User presses middle mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoMButtonUp",
+				"signature": "",
+				"description": "User releases middle mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoMClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"description": "User performs a middle mouse button click on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoMDClick",
+				"signature": "/**Number*/x,/**Number*/y",
+				"description": "User clicks middle mouse button on \"%object_name%\" in window \"%window_name%\""
+			},
+			{
+				"name": "DoSendKeys",
+				"signature": "/**String*/ keys",
+				"description": "User presses keys \"%param0%\" in window \"%object_name%\""
+			},
+			{
+				"name": "DoAnalogPlay",
+				"signature": "/**String*/ path, /**Number*/left, /**Number*/top",
+				"description": "Analog play \"%param0%\" with position relative to \"%object_name%\" in window \"%window_name%\"",
+				"paramInfo": {
+					"path": {
+						"type": "string",
+						"binding": "path",
+						"ext": "arf"
+					}
+				}
+			},
+			{
+				"name": "DoSetText",
+				"signature": "/**String*/ val",
+				"description": "User enters text \"%param0%\" into \"%object_name%\" in window \"%window_name%\""
+			}
+		],
+		"properties": [
+			{
+				"name": "X",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Y",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Width",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Height",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Name",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "WindowText",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "Class",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "State",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Value",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			},
+			{
+				"name": "ObjectType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Bitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "BWBitmap",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "ControlType",
+				"setsign": "",
+				"getsign": "",
+				"readonly": true
+			},
+			{
+				"name": "Text",
+				"setsign": "value",
+				"getsign": "",
+				"readonly": false
+			}
+		],
+		"items": null,
+		"window_text": "AUTDotNet2",
+		"window_class": "WindowsForms10.Window.8.app.0.202c666",
+		"object_text": "This is an edit box (autEdit).",
+		"object_role": "param:object_flavor",
+		"object_class": "WindowsForms10.EDIT.app.0.202c666",
+		"version": 0,
+		"object_type": "ManagedTextBox",
+		"object_flavor": "Text",
+		"object_name": "autEdit",
+		"object_library": "Managed",
+		"window_name": "AUTDotNet2",
+		"location": "MainForm.autEdit"
+	}
+}

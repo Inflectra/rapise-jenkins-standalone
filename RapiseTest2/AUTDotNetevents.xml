@@ -1,0 +1,6 @@
+<event event="checked"  name=""  text="chckListViewItem0"  checked="False"  />
+<event event="checked"  name=""  text="chckListViewItem1"  checked="False"  />
+<event event="checked"  name=""  text="chckListViewItem2"  checked="False"  />
+<event event="checked"  name=""  text="chckListViewItem3"  checked="False"  />
+<event event="checked"  name=""  text="chckListViewItem4"  checked="False"  />
+<event event="changed"  name="autEdit"  text="12345"  />

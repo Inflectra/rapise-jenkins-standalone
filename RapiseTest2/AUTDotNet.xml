@@ -1,0 +1,71 @@
+<root appTitle="AUTDotNet2">
+  <control name="propertyGrid1" type="PropertyGrid" role="Default" text="PropertyGrid" absXPos="673" absYPos="241" width="225" height="383">
+    <control name="" type="DocComment" role="Default" text="Description Pane" absXPos="673" absYPos="241" width="0" height="59">
+      <control name="" type="Label" role="Default" text="" absXPos="673" absYPos="241" width="100" height="23" />
+      <control name="" type="Label" role="Default" text="" absXPos="676" absYPos="259" width="0" height="37" />
+    </control>
+    <control name="" type="HotCommands" role="Default" text="Command Pane" absXPos="673" absYPos="241" width="0" height="0">
+      <control name="" type="LinkLabel" role="Default" text="" absXPos="673" absYPos="241" width="100" height="23" />
+    </control>
+    <control name="" type="PropertyGridView" role="Default" text="PropertyGridView" absXPos="673" absYPos="241" width="0" height="0">
+      <control name="" type="VScrollBar" role="Default" text="" absXPos="673" absYPos="241" width="17" height="80" />
+      <control name="" type="GridViewEdit" role="Default" text="" absXPos="673" absYPos="241" width="100" height="20" />
+      <control name="" type="DropDownButton" role="Default" text="" absXPos="673" absYPos="241" width="17" height="15" />
+      <control name="" type="DropDownButton" role="Default" text="" absXPos="673" absYPos="241" width="17" height="15" />
+    </control>
+    <control name="" type="ToolStrip" role="ToolBar" text="PropertyGridToolBar" absXPos="673" absYPos="241" width="100" height="25" />
+  </control>
+  <control name="checkedListBox1" type="CheckedListBox" role="Default" text="" absXPos="505" absYPos="530" width="153" height="94" />
+  <control name="dateTimePicker1" type="DateTimePicker" role="Default" text="" absXPos="458" absYPos="362" width="200" height="20" />
+  <control name="dataGridView1" type="DataGridView" role="Default" text="" absXPos="117" absYPos="506" width="366" height="118">
+    <control name="" type="HScrollBar" role="Default" text="" absXPos="117" absYPos="639" width="80" height="17" />
+    <control name="" type="VScrollBar" role="Default" text="" absXPos="340" absYPos="506" width="17" height="80" />
+  </control>
+  <control name="toolStrip1" type="ToolStrip" role="Default" text="toolStrip1" absXPos="105" absYPos="637" width="793" height="25">
+    <control name="" type="ToolStripComboBoxControl" role="Default" text="" absXPos="282" absYPos="638" width="121" height="23" />
+    <control name="" type="ToolStripTextBoxControl" role="Default" text="" absXPos="405" absYPos="638" width="100" height="23" />
+    <control name="" type="ProgressBar" role="Default" text="" absXPos="507" absYPos="639" width="100" height="22" />
+  </control>
+  <control name="btAlias" type="AliasButton" role="Default" text="Button" absXPos="521" absYPos="395" width="75" height="23" />
+  <control name="listView2" type="ListView" role="Default" text="" absXPos="505" absYPos="241" width="153" height="94" CheckBoxes="True" />
+  <control name="listView1" type="ListView" role="Default" text="" absXPos="331" absYPos="395" width="152" height="97" CheckBoxes="False" />
+  <context_menu_parent name="contextMenuHolder" type="Label" role="Default" text="Context Menu Holder" absXPos="551" absYPos="479" width="107" height="13">
+    <menu name="contextItem1ToolStripMenuItem" type="ToolStripMenuItem" role="Default" text="ContextItem1">
+      <menu name="contextItem1Item1ToolStripMenuItem" type="ToolStripMenuItem" role="Default" text="ContextItem1Item1" />
+    </menu>
+    <menu name="contextItem2ToolStripMenuItem" type="ToolStripMenuItem" role="Default" text="ContextItem2" />
+  </context_menu_parent>
+  <control name="autTabControl" type="TabControl" role="Default" text="" absXPos="490" absYPos="168" width="101" height="50">
+    <control name="autTabPage1" type="TabPage" role="Default" text="Tab1" absXPos="392" absYPos="88" width="93" height="24">
+      <control name="buttonInTab2" type="Button" role="Default" text="buttonInTab2" absXPos="392" absYPos="88" width="75" height="23" />
+    </control>
+    <control name="autTabPage2" type="TabPage" role="Default" text="Tab2" absXPos="392" absYPos="88" width="93" height="24" />
+  </control>
+  <control name="treeViewNoCB" type="TreeView" role="Default" text="" absXPos="117" absYPos="395" width="202" height="97" CheckBoxes="False">
+    <node text="Root" absXPos="119" absYPos="397" width="0" height="0">
+      <node text="RootNode1" absXPos="160" absYPos="413" width="59" height="16" />
+      <node text="RootNode2" absXPos="160" absYPos="429" width="59" height="16">
+        <node text="RootNode2Node3" absXPos="179" absYPos="445" width="91" height="16" />
+      </node>
+    </node>
+  </control>
+  <control name="autLabel" type="Label" role="Default" text="This is a label (autLabel)." absXPos="112" absYPos="168" width="124" height="13" />
+  <control name="treeViewCB" type="TreeView" role="Default" text="" absXPos="115" absYPos="291" width="204" height="94" CheckBoxes="True">
+    <node text="Root" absXPos="117" absYPos="293" width="0" height="0">
+      <node text="RootNode1" absXPos="171" absYPos="309" width="59" height="16" />
+      <node text="RootNode2" absXPos="171" absYPos="325" width="59" height="16">
+        <node text="RootNode2Node3" absXPos="190" absYPos="341" width="91" height="16" />
+        <node text="RootNode2Node4" absXPos="190" absYPos="357" width="91" height="16" />
+      </node>
+    </node>
+  </control>
+  <control name="autEdit" type="TextBox" role="Default" text="This is an edit box (autEdit)." absXPos="115" absYPos="226" width="148" height="20" />
+  <control name="radio2" type="RadioButton" role="Default" text="radio2" absXPos="329" absYPos="365" width="54" height="17" />
+  <control name="autLinkLabel" type="LinkLabel" role="Default" text="This is a link label (autLinkLabel)." absXPos="112" absYPos="196" width="163" height="13" />
+  <control name="radio1" type="RadioButton" role="Default" text="radio1" absXPos="329" absYPos="342" width="54" height="17" />
+  <control name="autButton" type="Button" role="Default" text="This is a button (autButton)." absXPos="115" absYPos="262" width="148" height="23" />
+  <control name="listBox1" type="ListBox" role="Default" text="" absXPos="329" absYPos="241" width="154" height="95" />
+  <control name="checkBox" type="CheckBox" role="Default" text="checkBox" absXPos="326" absYPos="168" width="74" height="17" />
+  <control name="comboBox" type="ComboBox" role="Default" text="" absXPos="326" absYPos="209" width="155" height="21" />
+  <main_menu_parent name="menuStrip1" type="MenuStrip" role="Default" text="menuStrip1" absXPos="105" absYPos="128" width="793" height="24" />
+</root>
