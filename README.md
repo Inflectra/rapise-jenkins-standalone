@@ -6,13 +6,13 @@ Recommended approach is to use SpiraTest and RapiseLauncher designied for this t
 
 # Preparing Jenkins Slave
 Choose *Manage Jenkins*:
-![Manage Jenkins](Images/ManageJenkins.png)
+![Manage Jenkins](Images/ManageJenkinsH.png)
 
 Select *Manage Nodes*:
-![Manage Nodes](Images/ManageNodes.png)
+![Manage Nodes](Images/ManageNodesH.png)
 
 Define a windows node:
-![Slave Node](Images/NodeConfig.png)
+![Slave Node](Images/NodeConfigH.png)
 It should be a Windows node. The PC owning this node must be windows host with Rapise installed. In general one or many remote nodes may be chosen. In particular the it may be the host running Jenkins itself (if it is a Windows host).
 
 For the *Remote Root Directory* we choose fixed path `c:\JenkinsRunner`. It is because some parts of the test files rely on the fixed path. 
