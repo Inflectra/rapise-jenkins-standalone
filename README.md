@@ -76,8 +76,16 @@ Finally we may configure log parser. You need [Log Parser Plugin](https://wiki.j
 
 ![Log Parser](Images/JenkinsProjectLogParserH.png)
 
+The log parser uses rules for the .tap format (we dump [TAP](https://testanything.org/) output to the console execution log in the `runtests.bat`).
+
 You may also archive Rapise native execution report with your test using [HTML Publisher Plugin](https://wiki.jenkins.io/display/JENKINS/HTML+Publisher+Plugin). Files that need to be published are `**.trp`.
 
 
+# Execution
+Once `RapiseTest` project run in Jenkins you should see GUI test execution on the Windows Slave host. Please, note that Slave should be executed on the unlocked desktop. See more info on remote execution [Here](https://www.inflectra.com/support/knowledgebase/kb131.aspx).
 
+Log parser may provide information about failed assertions in your test. You may see them by accessing `Parsed Console Output` for the Build:
+![Result](Images/JenkinsProjectBuildResultH.png)
+
+![Parsed Result](Images/JenkinsProjectBuildResultParsedH.png)
 
