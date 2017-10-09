@@ -18,10 +18,66 @@ It should be a Windows node. The PC owning this node must be windows host with R
 For the *Remote Root Directory* we choose fixed path `c:\JenkinsRunner`. It is because some parts of the test files rely on the fixed path. 
 
 # Preparing Folder Structure
-Test code may be stored either on the local folder or in Git. We use the following structure:
+Test code may be stored either on the local folder or in Git. We use the fixed structure. Test files are stored in the same location so we may use absolute paths in the project configuration.
+
+![Slave Folder](Images/JenkinsSlaveFolderH.png)
+
+`workspace` subfolder is created by Jenkins and all files are checked out into folder *<ProjectName>*:
+![Workspace](Images/JenkinsWorkspaceFilesH.png)
 
 
+*RapiseTest* is a project name we are going to create. 
 
+*RapiseTest1* and *RapiseTest2* are subfolders containing tests to be executed.
+
+`runtests.bat` is file doing execution and collection of logs. It looks as follows:
+
+```cmd
+@set RUN_ROOT=%~dp0
+
+@del /s/f/q %RUN_ROOT%RapiseTest1\Reports
+@call %RUN_ROOT%\RapiseTest1\play.cmd
+@echo ========== Output Log ==========
+@type %RUN_ROOT%\RapiseTest1\last.tap
+
+@del /s/f/q %RUN_ROOT%RapiseTest2\Reports
+@call %RUN_ROOT%\RapiseTest2\play.cmd
+@echo ========== Output Log ==========
+@type %RUN_ROOT%\RapiseTest2\last.tap
+```
+
+If you want to execute all test at once then this .bat may be expanded accordingly. 
+
+We store `runtests.bat` in the Git repository. It may also be stored locally and referred by an absolute path.
+
+# Preparing Tests
+Each test in Rapise has a file `play.cmd` stored in its folder. It is automatically generated when you play a test with Rapise.
+
+Here is what we need to prepare:
+1. Re-create final workspace structure, i.e. *Node root*/`workspace`/*ProjectName* and save the tests in it. 
+2. Then open each test in Rapise and play it, so `play.cmd` contains correct absolute paths.
+3. If needed, commit&push.
 
 # Preparing Jenkins Project
+We create new Jenkins project called `RapiseTest` and assign it to *local_agent* execution node created earlier:
+
+![Local Slave](Images/JenkinsProjectH.png)
+
+Then configure Git (you may skip this if you have tests saved locally):
+
+![Git config](Images/JenkinsProjectGitH.png)
+
+Then configure the Build step:
+![Build config](Images/JenkinsProjectBuildH.png)
+
+We refer to `runtests.cmd` starting from the project root. However it may also be stored locally and referred by an absolute path.
+
+Finally we may configure log parser. You need [Log Parser Plugin](https://wiki.jenkins.io/display/JENKINS/Log+Parser+Plugin) for Jenkins to enable it.
+
+![Log Parser](Images/JenkinsProjectLogParserH.png)
+
+You may also archive Rapise native execution report with your test using [HTML Publisher Plugin](https://wiki.jenkins.io/display/JENKINS/HTML+Publisher+Plugin). Files that need to be published are `**.trp`.
+
+
+
 
